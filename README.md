@@ -21,4 +21,8 @@ Implementation-3 . Alternative method for implementation 2.
 Implementation-5 . Common cache for all the proxy servers load balanced by least number of connections in the proxies.
 →When a request is made to the website the load balancer checks for the proxy server that has served the least number of connections and request is sent via that proxy server.
 
+Independent cache
+![alt text](https://raw.githubusercontent.com/vkdhanaraj/Custom-proxy/master/images/independent_cache.png)
 
+Common cache
+![alt text](https://raw.githubusercontent.com/vkdhanaraj/Custom-proxy/master/images/common_cache.png)
