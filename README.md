@@ -15,7 +15,9 @@ We build a horizontally scalable proxy layer which is load balanced via a load b
 
 ## Implementation-3 . Alternative method for implementation 2. 
 → An improvement to increase cache memory efficiency and time taken to complete request is that we store the URL and the proxy server number which completes the request for that URL in the load balancer.
+
 → Hence when we encounter the same URL request, we search for the proxy server number in the cache of the load balancer server and send the request to the same proxy server.
+
 → If the difference of number of connections between the proxy servers is more or the URL is being requested for the first time after previous expiry of cache, then we use the ‘least connection method’ to process the request.
 
 ## Implementation-4 . Common cache for all the proxy servers load balanced by round robin method.
