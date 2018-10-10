@@ -13,9 +13,6 @@ app.post('/cache_post', function(req,res){
         console.log('trying to create new cache entry');
         var key = req.query.key;
         var value = req.body.key;
-//        console.log('key inside post :' + key)
-//        console.log('value inside post :')
-//        console.log(value);
         mcache.put(key, value, duration * 1000);
         res.send('inside post')
 })
@@ -23,7 +20,6 @@ app.post('/cache_post', function(req,res){
 //To read data from the cache
 app.get(('/cache_get'), function(req,res){
         console.log('trying to get cache data');
-//        console.log('key : '+ req.query.key);
         var data = mcache.get(req.query.key)
         res.send(data)
 });
