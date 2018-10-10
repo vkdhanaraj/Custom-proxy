@@ -3,7 +3,6 @@
 var express = require('express'),bodyParser = require('body-parser');
 var app = express();
 var mcache = require('memory-cache');
-var url='http://www.espncricinfo.com'
 var duration = 30;
 
 app.use(bodyParser.json({limit: '50mb'}));
